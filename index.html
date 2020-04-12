@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expedo</title>
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <div class="page">
+       
+      <nav id="navigation" class="navigation">
+        <ul class="menu">
+          <li>
+            <a href="#"><span class=" icon"></span></a>
+          </li>
+          <li>
+            <a href="#" class="active"><span class=" icon"></span></a>
+          </li>
+          <li>
+            <a href="#"><span class=" icon"></span></a>
+          </li>
+        </ul>
+
+        <ul class="menu">
+          <li>
+            <a href="#"><span class=" icon"></span></a>
+          </li>
+          <li>
+            <a href="#"><span class=" icon"></span></a>
+          </li>
+          <li>
+            <a href="#"><span class=" icon"></span></a>
+          </li>
+        </ul>
+      </nav>
+      <main id="main" class="main">
+          <img src="./images/illustration.svg" class="page-header-bg" alt="illustration">
+        <header class="page-header">
+          <h1 class="page-title mb-2">
+            Good Morning <b>Craig</b> , Welcome to Expedo
+          </h2>
+          <h1 class="page-title mb-3"><b>Let’s explore Expedo</b></h1>
+
+          <div class="btn-inline">
+           
+            <a class="btn btn-primary btn-wmin btn-hasArrow" href="#"
+              >Quick Link
+              
+            </a>
+
+            <a class="btn btn-outline btn-wmin btn-hasArrow" href="#"
+            >Go to Dashboard
+            
+          </a>
+
+
+          </div>
+        </header>
+
+ <div class="card-lists mt-6">
+    <article class="card">
+        <img src="./images/icon-positionLibrary.svg" alt="Position Library">
+        <div class="card__content">
+            <h3 class="card__title">Position Library</h3>
+        <div class="card__summery">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis luctus facilisis ultrices etiam. 
+        </div>
+        <a class="btn btn-ghost btn-flush btn-hasArrow" href="#"
+          >Explore
+        </a>
+       </div>
+    </article>
+
+    <article class="card">
+        <img src="./images/icon-contractTemplate.svg" alt="Contract Template">
+        <div class="card__content">
+            <h3 class="card__title">Contract Template</h3>
+        <div class="card__summery">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis luctus facilisis ultrices etiam. 
+        </div>
+        <a class="btn btn-ghost btn-flush btn-hasArrow" href="#"
+          >Explore
+        </a>
+       </div>
+    </article>
+
+    <article class="card">
+        <img src="./images/icon-letterTemplate.svg" alt="Letter Template">
+        <div class="card__content">
+            <h3 class="card__title">Letter Template</h3>
+        <div class="card__summery">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis luctus facilisis ultrices etiam. 
+        </div>
+        <a class="btn btn-ghost btn-flush btn-hasArrow" href="#"
+          >Explore
+        </a>
+       </div>
+    </article>
+
+    <article class="card">
+        <img src="./images/icon-courses.svg" alt="Courses">
+        <div class="card__content">
+            <h3 class="card__title">Courses</h3>
+        <div class="card__summery">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis luctus facilisis ultrices etiam. 
+        </div>
+        <a class="btn btn-ghost btn-flush btn-hasArrow" href="#"
+          >Explore
+        </a>
+       </div>
+    </article>
+
+    <article class="card">
+        <img src="./images/icon-workflows.svg" alt="Workflows">
+        <div class="card__content">
+            <h3 class="card__title">Workflows</h3>
+        <div class="card__summery">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis luctus facilisis ultrices etiam. 
+        </div>
+        <a class="btn btn-ghost btn-flush btn-hasArrow" href="#"
+          >Explore
+        </a>
+       </div>
+    </article>
+
+    <article class="card">
+        <img src="./images/icon-help.svg" alt="Need Help?">
+        <div class="card__content">
+            <h3 class="card__title">Need Help?</h3>
+        <div class="card__summery">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis luctus facilisis ultrices etiam. 
+        </div>
+        <a class="btn btn-ghost btn-flush btn-hasArrow" href="#"
+          >Explore
+        </a>
+       </div>
+    </article>
+
+    
+ </div>
+
+      </main>
+    </div>
+
+    <script>
+        let btns=document.querySelectorAll('.btn-hasArrow');
+
+        btns.forEach(btn => {
+            let value=btn.text;
+            let icon=`<svg
+                width="28"
+                height="22"
+                viewBox="0 0 28 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M27.7071 11.7071C28.0976 11.3166 28.0976 10.6834 27.7071 10.2929L21.3431 3.92893C20.9526 3.53841 20.3195 3.53841 19.9289 3.92893C19.5384 4.31946 19.5384 4.95262 19.9289 5.34315L25.5858 11L19.9289 16.6569C19.5384 17.0474 19.5384 17.6805 19.9289 18.0711C20.3195 18.4616 20.9526 18.4616 21.3431 18.0711L27.7071 11.7071ZM0 12H27V10H0V12Z"
+                
+                />
+              </svg>`;
+            btn.innerHTML=`${value} ${icon}`;
+        });
+    </script>
+  </body>
+</html>
