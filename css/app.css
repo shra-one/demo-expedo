@@ -365,12 +365,19 @@ a {
 }
 
 .page-header-bg {
+  display: none;
   position: absolute;
   right: 0;
   max-width: 100%;
   height: auto;
   top: 0;
   z-index: -1;
+}
+
+@media (min-width: 992px) {
+  .page-header-bg {
+    display: block;
+  }
 }
 
 .navigation {

@@ -129,6 +129,10 @@ $spacers: (
   }
 }
 .page-header-bg {
+  @media(min-width:992px){
+    display: block;
+  }
+  display: none;
   position: absolute;
   right: 0;
   max-width: 100%;
